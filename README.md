@@ -1,0 +1,1 @@
+# curate-chrome-ext
