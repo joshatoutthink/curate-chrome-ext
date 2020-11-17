@@ -16,3 +16,12 @@
 
 ## TODO
 - [ ] not sure yet 😕
+
+
+## Chrome Apis
+- storage - store the image urls 
+- runtime
+  - .sendMessage()
+  - .onMessage() ( eventListener )
+- commands - keyboard shortcuts
+- contextMenus - used for right click actions
