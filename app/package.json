@@ -1,0 +1,18 @@
+{
+  "name": "curate-chrome-ext",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/joshatoutthink/curate-chrome-ext.git",
+  "author": "Joshua Kennedy <josh@outthinkgroup.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel watch src/popup.html src/backend.js"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
