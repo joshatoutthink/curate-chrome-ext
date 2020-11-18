@@ -14,8 +14,14 @@
 - eventually headless chrome
 
 
-## TODO
-- [ ] not sure yet 😕
+## TODO: MVP
+- content script
+  - capture the url 
+  - send the url to storage.
+- app/popup
+  - display the storage
+  - export to collection
+
 
 
 ## Chrome Apis

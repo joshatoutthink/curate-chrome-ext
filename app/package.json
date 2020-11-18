@@ -6,7 +6,7 @@
   "author": "Joshua Kennedy <josh@outthinkgroup.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel watch src/popup.html src/backend.js"
+    "dev": "parcel watch src/popup.html src/backend.js src/content.js"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
