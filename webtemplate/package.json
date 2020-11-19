@@ -6,7 +6,8 @@
   "author": "Joshua Kennedy <josh@outthinkgroup.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "puppeteer": "^5.5.0"
