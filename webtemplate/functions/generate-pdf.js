@@ -1,12 +1,21 @@
 require("dotenv").config();
 const chromium = require("chrome-aws-lambda");
-const puppeteer =
-  process.env.NODE_ENV !== "production"
-    ? require("puppeteer")
-    : require("puppeteer-core");
-exports.handler = async (event, context) => {
-  const browser = await puppeteer.launch({});
 
+exports.handler = async (event, context) => {
+  let executablePath = await chromium.executablePath;
+  if (
+    executablePath ===
+    "/var/folders/cz/st9_s24d0fgb3f4qqkn25bqh0000gq/T/chromium"
+  ) {
+    executablePath =
+      "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+  }
+  console.log(executablePath);
+  const browser = await chromium.puppeteer.launch({
+    args: await chromium.args,
+    executablePath: executablePath,
+    headless: true,
+  });
   const page = await browser.newPage();
 
   await page.goto(

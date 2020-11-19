@@ -13,6 +13,7 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
-[development.enviorment]  
+[dev.enviorment]  
   NODE_ENV = "development"
   ENV = "yo"
+  PUPPETEER_SKIP_CHROMIUM_DOWNLOAD = false
