@@ -1,0 +1,18 @@
+[dev]
+  functions = './functions'
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[build]
+  functions = './functions'
+  publish = "dist"
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[development.enviorment]  
+  NODE_ENV = "development"
+  ENV = "yo"

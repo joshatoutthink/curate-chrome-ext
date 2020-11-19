@@ -15,13 +15,18 @@
 
 
 ## TODO: MVP
-- content script
-  - capture the url 
-  - send the url to storage.
+
 - app/popup
   - display the storage
-  - export to collection
-
+  -    export to collection
+- Create a netlify env/ tooling with dev/prod vars
+- Cloud Function
+  - generate url string of images with the webpage url
+  - headless chrome create pdf of webpage
+  - Eventually Generate the webpage with puppeteer and remove the webpage.
+- Webpage/PDF Template
+  - Create webpage folder structure
+  - display in grid
 
 
 ## Chrome Apis

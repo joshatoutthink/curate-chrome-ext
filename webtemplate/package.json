@@ -1,0 +1,19 @@
+{
+  "name": "curate-chrome-ext-webtemplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/joshatoutthink/curate-chrome-ext.git",
+  "author": "Joshua Kennedy <josh@outthinkgroup.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "devDependencies": {
+    "puppeteer": "^5.5.0"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^5.3.1",
+    "dotenv": "^8.2.0",
+    "puppeteer-core": "^5.5.0"
+  }
+}
